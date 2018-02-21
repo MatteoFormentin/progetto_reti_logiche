@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto reti logiche/project_reti_logiche/project_reti_logiche.sim/sim_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [VRFC 10-163] Analyzing VHDL file "//vmware-host/Shared Folders/Scrivania/FSM_testbench1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
