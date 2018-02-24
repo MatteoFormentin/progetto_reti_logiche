@@ -1,0 +1,42 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Note: stato: AUMENTA_INDIRIZZO
+Time: 172500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 187500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 2
+Time: 187500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero colonne: 
+Time: 187500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 187500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 202500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 217500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 3
+Time: 217500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero righe: 
+Time: 217500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 24
+Time: 217500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 232500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 4
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero soglia: 
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 7
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 262500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 277500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 5
+Time: 277500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 277500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 21
+Time: 277500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/so
