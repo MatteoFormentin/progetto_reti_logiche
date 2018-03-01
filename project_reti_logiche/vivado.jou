@@ -2,14 +2,133 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Feb 24 14:46:34 2018
-# Process ID: 1476
-# Current directory: C:/Progetto_reti_logiche/project_reti_logiche
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5488 C:\Progetto_reti_logiche\project_reti_logiche\project_reti_logiche.xpr
-# Log file: C:/Progetto_reti_logiche/project_reti_logiche/vivado.log
-# Journal file: C:/Progetto_reti_logiche/project_reti_logiche\vivado.jou
+# Start of session at: Thu Mar  1 21:53:32 2018
+# Process ID: 3756
+# Current directory: C:/Progetto_Reti_Logiche/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7000 C:\Progetto_Reti_Logiche\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.log
+# Journal file: C:/Progetto_Reti_Logiche/project_reti_logiche\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.xpr
+open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+update_files -from_files C:/Progetto_reti_logiche/test_bench/FSM_testbench2.vhd -to_files C:/Progetto_Reti_Logiche/test_bench/FSM_testbench4.vhd -filesets [get_filesets *]
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+reset_run synth_1
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source project_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+update_files -from_files C:/Progetto_reti_logiche/test_bench/FSM_testbench1.vhd -to_files C:/Progetto_reti_logiche/test_bench/FSM_testbench2.vhd -filesets [get_filesets *]
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+close_sim
+launch_simulation
+source project_tb.tcl
+create_fileset -simset sim_2
+set_property SOURCE_SET sources_1 [get_filesets sim_2]
+add_files -fileset sim_2 -norecurse C:/Progetto_reti_logiche/test_bench/FSM_testbench2.vhd
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_2
+create_fileset -simset sim_3
+set_property SOURCE_SET sources_1 [get_filesets sim_3]
+add_files -fileset sim_3 -norecurse C:/Progetto_Reti_Logiche/test_bench/FSM_testbench3.vhd
+update_compile_order -fileset sim_3
+update_compile_order -fileset sim_3
+create_fileset -simset sim_4
+set_property SOURCE_SET sources_1 [get_filesets sim_4]
+add_files -fileset sim_4 -norecurse C:/Progetto_reti_logiche/test_bench/FSM_testbench4.vhd
+reset_simulation -simset sim_4 -mode behavioral
+launch_simulation -simset sim_4
+source project_tb.tcl
+launch_simulation -simset sim_3
+source project_tb.tcl
+close_sim
+launch_simulation -simset sim_3
+source project_tb.tcl
+close_sim
+launch_simulation -simset sim_3
+source project_tb.tcl
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_sim
+current_sim simulation_23
+close_sim
+close_sim

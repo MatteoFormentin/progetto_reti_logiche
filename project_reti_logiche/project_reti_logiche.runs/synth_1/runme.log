@@ -14,363 +14,35 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 5236 
+INFO: Helper process launched with PID 1592 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 332.848 ; gain = 100.449
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 332.789 ; gain = 100.340
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element area_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:149]
-WARNING: [Synth 8-3848] Net N_RIGHE in module/entity project_reti_logiche does not have driver. [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:57]
-WARNING: [Synth 8-3848] Net SOGLIA in module/entity project_reti_logiche does not have driver. [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element curr_colonna_reg was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:171]
+WARNING: [Synth 8-6014] Unused sequential element curr_riga_reg was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:41]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 385.004 ; gain = 152.605
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 385.063 ; gain = 152.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 385.004 ; gain = 152.605
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 385.063 ; gain = 152.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 385.004 ; gain = 152.605
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 385.063 ; gain = 152.613
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element curr_colonna_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:124]
-WARNING: [Synth 8-6014] Unused sequential element curr_riga_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:126]
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 385.004 ; gain = 152.605
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-No constraint files found.
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
-	   3 Input      8 Bit       Adders := 2     
-+---Registers : 
-	               32 Bit    Registers := 6     
-	               16 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   8 Input     16 Bit        Muxes := 2     
-	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 15    
-	   2 Input      1 Bit        Muxes := 2     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module project_reti_logiche 
-Detailed RTL Component Info : 
-+---Adders : 
-	   3 Input     32 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
-	   3 Input      8 Bit       Adders := 2     
-+---Registers : 
-	               32 Bit    Registers := 6     
-	               16 Bit    Registers := 2     
-	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   8 Input     16 Bit        Muxes := 2     
-	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 15    
-	   2 Input      1 Bit        Muxes := 2     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a200tfbg484-1
-Part Resources:
-DSPs: 740 (col length:100)
-BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
-No constraint files found.
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element curr_colonna_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:124]
-WARNING: [Synth 8-6014] Unused sequential element curr_riga_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:126]
-INFO: [Synth 8-3886] merging instance 'letto_reg[8]' (FDE) to 'letto_reg[9]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[9]' (FDE) to 'letto_reg[10]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[10]' (FDE) to 'letto_reg[11]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[11]' (FDE) to 'letto_reg[12]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[12]' (FDE) to 'letto_reg[13]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[13]' (FDE) to 'letto_reg[14]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[14]' (FDE) to 'letto_reg[15]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[15]' (FDE) to 'letto_reg[16]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[16]' (FDE) to 'letto_reg[17]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[17]' (FDE) to 'letto_reg[18]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[18]' (FDE) to 'letto_reg[19]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[19]' (FDE) to 'letto_reg[20]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[20]' (FDE) to 'letto_reg[21]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[21]' (FDE) to 'letto_reg[22]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[22]' (FDE) to 'letto_reg[23]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[23]' (FDE) to 'letto_reg[24]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[24]' (FDE) to 'letto_reg[25]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[25]' (FDE) to 'letto_reg[26]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[26]' (FDE) to 'letto_reg[27]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[27]' (FDE) to 'letto_reg[28]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[28]' (FDE) to 'letto_reg[29]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[29]' (FDE) to 'letto_reg[30]'
-INFO: [Synth 8-3886] merging instance 'letto_reg[30]' (FDE) to 'letto_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\letto_reg[31] )
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[8]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[9]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[10]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[11]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[12]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[13]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[14]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[15]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[16]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[17]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[18]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[19]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[20]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[21]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[22]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[23]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[24]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[25]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[26]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[27]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[28]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[29]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[30]' (FDE) to 'N_COLONNE_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[31] )
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[31]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (letto_reg[31]) is unused and will be removed from module project_reti_logiche.
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 581.949 ; gain = 349.551
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
-No constraint files found.
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 581.949 ; gain = 349.551
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     1|
-|2     |CARRY4 |    64|
-|3     |LUT1   |     8|
-|4     |LUT2   |    63|
-|5     |LUT3   |     9|
-|6     |LUT4   |   150|
-|7     |LUT5   |     5|
-|8     |LUT6   |    22|
-|9     |FDRE   |   254|
-|10    |IBUF   |    11|
-|11    |OBUF   |    27|
-+------+-------+------+
-
-Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |   614|
-+------+---------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 583.211 ; gain = 350.813
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 583.211 ; gain = 350.813
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 583.211 ; gain = 350.813
-INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 686.859 ; gain = 460.344
-INFO: [Common 17-1381] The checkpoint 'C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 686.859 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 14:11:22 2018...
-
-*** Running vivado
-    with args -log project_reti_logiche.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_reti_logiche.tcl
-
-
-****** Vivado v2017.4 (64-bit)
-  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
-
-source project_reti_logiche.tcl -notrace
-Command: synth_design -top project_reti_logiche -part xc7a200tfbg484-1
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4548 
----------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 332.531 ; gain = 99.969
----------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'project_reti_logiche' [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:51]
-WARNING: [Synth 8-6014] Unused sequential element curr_colonna_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:151]
-WARNING: [Synth 8-6014] Unused sequential element curr_riga_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:152]
-WARNING: [Synth 8-6014] Unused sequential element area_reg was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:169]
-WARNING: [Synth 8-3848] Net letto in module/entity project_reti_logiche does not have driver. [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:59]
-INFO: [Synth 8-256] done synthesizing module 'project_reti_logiche' (1#1) [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:51]
----------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 385.047 ; gain = 152.484
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 385.047 ; gain = 152.484
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7a200tfbg484-1
-INFO: [Device 21-403] Loading part xc7a200tfbg484-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 385.047 ; gain = 152.484
----------------------------------------------------------------------------------
-INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "o_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "N_COLONNE" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "N_RIGHE" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "SOGLIA" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "x_min6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'project_reti_logiche'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-              start_wait |                              000 |                              000
-       aumenta_indirizzo |                              001 |                              001
-               calc_area |                              010 |                              101
-                    done |                              011 |                              110
-        wait_clock_cicle |                              100 |                              010
-            lettura_byte |                              101 |                              011
-             check_pixel |                              110 |                              100
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'project_reti_logiche'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 385.047 ; gain = 152.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 402.266 ; gain = 169.816
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -384,32 +56,34 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 2     
 	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
 	   2 Input     31 Bit       Adders := 2     
-	   3 Input      8 Bit       Adders := 2     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 7     
-	               16 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Multipliers : 
 	                32x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     31 Bit        Muxes := 2     
-	   7 Input     16 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	  19 Input      3 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 2     
-	  10 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
-	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 11    
+	  11 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 12    
+	  12 Input      1 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -420,32 +94,34 @@ Hierarchical RTL Component report
 Module project_reti_logiche 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 2     
 	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
 	   2 Input     31 Bit       Adders := 2     
-	   3 Input      8 Bit       Adders := 2     
-	   2 Input      5 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 1     
-	   2 Input      3 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 2     
 +---Registers : 
-	               32 Bit    Registers := 7     
-	               16 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               16 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Multipliers : 
 	                32x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     31 Bit        Muxes := 2     
-	   7 Input     16 Bit        Muxes := 1     
-	   2 Input      5 Bit        Muxes := 1     
-	   7 Input      3 Bit        Muxes := 1     
-	  19 Input      3 Bit        Muxes := 1     
-	   9 Input      1 Bit        Muxes := 2     
-	  10 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 12    
-	   4 Input      1 Bit        Muxes := 1     
-	   7 Input      1 Bit        Muxes := 11    
+	  11 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	  11 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   4 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 12    
+	  12 Input      1 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -462,28 +138,73 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'N_RIGHE_reg' and it is trimmed from '32' to '16' bits. [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-3936] Found unconnected internal register 'N_COLONNE_reg' and it is trimmed from '32' to '16' bits. [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "x_min6" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:102]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:102]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:102]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:102]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:102]
-DSP Report: Generating DSP current_address4, operation Mode is: A2*B.
-DSP Report: register A is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: Generating DSP current_address4, operation Mode is: (PCIN>>17)+A*B.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: Generating DSP current_address4, operation Mode is: A2*B2.
-DSP Report: register B is absorbed into DSP current_address4.
-DSP Report: register A is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: Generating DSP current_address4, operation Mode is: (PCIN>>17)+A2*B.
-DSP Report: register A is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
-DSP Report: operator current_address4 is absorbed into DSP current_address4.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element N_RIGHE_reg was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element N_COLONNE_reg was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:94]
+DSP Report: Generating DSP current_address3, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: Generating DSP current_address3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: Generating DSP current_address3, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP current_address3.
+DSP Report: register A is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: Generating DSP current_address3, operation Mode is: (PCIN>>17)+A2*B.
+DSP Report: register A is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: operator current_address3 is absorbed into DSP current_address3.
+DSP Report: Generating DSP area0, operation Mode is: A2*B2.
+DSP Report: register N_RIGHE_reg is absorbed into DSP area0.
+DSP Report: register N_COLONNE_reg is absorbed into DSP area0.
+DSP Report: operator area0 is absorbed into DSP area0.
+DSP Report: Generating DSP area0, operation Mode is: A*B.
+DSP Report: operator area0 is absorbed into DSP area0.
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[8]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[9]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[10]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[11]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[12]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[13]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[14]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[15]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[16]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[17]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[18]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[19]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[20]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[21]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[22]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[23]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[24]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[25]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[26]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[27]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[28]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[29]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3886] merging instance 'pixel_corrente_reg[30]' (FDE) to 'pixel_corrente_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pixel_corrente_reg[31] )
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[8]' (FDE) to 'N_RIGHE_reg[9]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[9]' (FDE) to 'N_RIGHE_reg[10]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[10]' (FDE) to 'N_RIGHE_reg[11]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[11]' (FDE) to 'N_RIGHE_reg[12]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[12]' (FDE) to 'N_RIGHE_reg[13]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[13]' (FDE) to 'N_RIGHE_reg[14]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[14]' (FDE) to 'N_RIGHE_reg[15]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[15]' (FDE) to 'N_RIGHE_reg[16]'
+INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[16]' (FDE) to 'N_RIGHE_reg[17]'
 INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[8]' (FDE) to 'N_COLONNE_reg[9]'
 INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[9]' (FDE) to 'N_COLONNE_reg[10]'
 INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[10]' (FDE) to 'N_COLONNE_reg[11]'
@@ -532,15 +253,6 @@ INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[28]' (FDE) to 'N_COLONNE_re
 INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[29]' (FDE) to 'N_COLONNE_reg[30]'
 INFO: [Synth 8-3886] merging instance 'N_COLONNE_reg[30]' (FDE) to 'N_COLONNE_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[31] )
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[8]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[9]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[10]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[11]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[12]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[13]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[14]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[15]' (FDE) to 'N_RIGHE_reg[17]'
-INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[16]' (FDE) to 'N_RIGHE_reg[17]'
 INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[17]' (FDE) to 'N_RIGHE_reg[18]'
 INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[18]' (FDE) to 'N_RIGHE_reg[19]'
 INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[19]' (FDE) to 'N_RIGHE_reg[20]'
@@ -556,81 +268,16 @@ INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[28]' (FDE) to 'N_RIGHE_reg[29
 INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[29]' (FDE) to 'N_RIGHE_reg[30]'
 INFO: [Synth 8-3886] merging instance 'N_RIGHE_reg[30]' (FDE) to 'N_RIGHE_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_RIGHE_reg[31] )
-INFO: [Synth 8-3886] merging instance 'current_address_reg[15]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[14]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[12]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[13]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[8]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[9]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[10]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[11]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[6]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[7]' (FDE) to 'current_address_reg[5]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_address_reg[5] )
-INFO: [Synth 8-3886] merging instance 'o_address_reg[0]' (FDE) to 'o_address_reg[1]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[1]' (FDE) to 'o_address_reg[2]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[2]' (FDE) to 'o_address_reg[3]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[3]' (FDE) to 'o_address_reg[4]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[4]' (FDE) to 'o_address_reg[5]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[5]' (FDE) to 'o_address_reg[6]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[6]' (FDE) to 'o_address_reg[7]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[7]' (FDE) to 'o_address_reg[8]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[8]' (FDE) to 'o_address_reg[9]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[9]' (FDE) to 'o_address_reg[10]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[10]' (FDE) to 'o_address_reg[11]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[11]' (FDE) to 'o_address_reg[12]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[12]' (FDE) to 'o_address_reg[13]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[13]' (FDE) to 'o_address_reg[14]'
-INFO: [Synth 8-3886] merging instance 'o_address_reg[14]' (FDE) to 'o_address_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\o_address_reg[15] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_max_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_min_reg[31] )
-WARNING: [Synth 8-3332] Sequential element (current_address_reg[5]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[31]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (y_max_reg[31]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (SOGLIA_reg[31]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (y_min_reg[31]) is unused and will be removed from module project_reti_logiche.
 WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[31]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[7]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[6]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[5]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[4]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[3]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[2]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[1]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_RIGHE_reg[0]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (o_address_reg[15]) is unused and will be removed from module project_reti_logiche.
-INFO: [Synth 8-3886] merging instance 'current_address_reg[1]' (FDE) to 'current_address_reg[3]'
-INFO: [Synth 8-3886] merging instance 'current_address_reg[3]' (FDE) to 'current_address_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\current_address_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\N_COLONNE_reg[7] )
-INFO: [Synth 8-3886] merging instance 'x_max_reg[9]' (FDE) to 'x_max_reg[1]'
-INFO: [Synth 8-3886] merging instance 'x_max_reg[8]' (FDE) to 'x_max_reg[1]'
-INFO: [Synth 8-3886] merging instance 'x_max_reg[11]' (FDE) to 'x_max_reg[1]'
-INFO: [Synth 8-3886] merging instance 'x_max_reg[10]' (FDE) to 'x_max_reg[1]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_max_reg[6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_min_reg[6] )
-WARNING: [Synth 8-3332] Sequential element (current_address_reg[4]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[7]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[6]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[5]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[4]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[3]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[2]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[1]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[0]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (y_max_reg[6]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (y_min_reg[6]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (N_COLONNE_reg[31]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (SOGLIA_reg[31]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (pixel_corrente_reg[31]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (y_min_reg[31]) is unused and will be removed from module project_reti_logiche.
+WARNING: [Synth 8-3332] Sequential element (y_max_reg[31]) is unused and will be removed from module project_reti_logiche.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -644,6 +291,8 @@ DSP: Preliminary Mapping  Report (see note below)
 |project_reti_logiche | (PCIN>>17)+A*B  | 15     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 |project_reti_logiche | A2*B2           | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
 |project_reti_logiche | (PCIN>>17)+A2*B | 18     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|project_reti_logiche | A2*B2           | 16     | 16     | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|project_reti_logiche | A*B             | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -660,18 +309,8 @@ No constraint files found.
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_max_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\y_min_reg[30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_min_reg[6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\x_min_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\x_max_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (y_max_reg[30]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (x_max_reg[1]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (y_min_reg[30]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (x_min_reg[6]) is unused and will be removed from module project_reti_logiche.
-WARNING: [Synth 8-3332] Sequential element (x_min_reg[0]) is unused and will be removed from module project_reti_logiche.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -683,7 +322,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,7 +346,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -720,7 +359,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -732,25 +371,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -767,15 +406,15 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     1|
-|2     |CARRY4  |    47|
-|3     |DSP48E1 |     3|
-|4     |LUT1    |    28|
-|5     |LUT2    |    81|
-|6     |LUT3    |    14|
-|7     |LUT4    |    13|
-|8     |LUT5    |    11|
-|9     |LUT6    |    27|
-|10    |FDRE    |    32|
+|2     |CARRY4  |   505|
+|3     |DSP48E1 |     5|
+|4     |LUT1    |    73|
+|5     |LUT2    |   289|
+|6     |LUT3    |   138|
+|7     |LUT4    |  1154|
+|8     |LUT5    |   372|
+|9     |LUT6    |   151|
+|10    |FDRE    |   221|
 |11    |IBUF    |    11|
 |12    |OBUF    |    27|
 +------+--------+------+
@@ -784,27 +423,28 @@ Report Instance Areas:
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |   295|
+|1     |top      |       |  2947|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 599.457 ; gain = 366.895
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 606.055 ; gain = 373.605
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 521 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'project_reti_logiche' is not ideal for floorplanning, since the cellview 'project_reti_logiche' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-145 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+118 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 695.441 ; gain = 468.934
-INFO: [Common 17-1381] The checkpoint 'C:/Progetto_reti_logiche/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 707.348 ; gain = 480.895
+INFO: [Common 17-1381] The checkpoint 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.runs/synth_1/project_reti_logiche.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file project_reti_logiche_utilization_synth.rpt -pb project_reti_logiche_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 695.441 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 24 16:01:27 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 707.348 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  2 00:06:39 2018...

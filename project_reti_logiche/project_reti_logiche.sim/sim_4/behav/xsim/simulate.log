@@ -1,0 +1,204 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Note: stato: AUMENTA_INDIRIZZO
+Time: 172500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 187500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 202500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 2
+Time: 202500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero colonne: 
+Time: 202500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 24
+Time: 202500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 217500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 232500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 3
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero righe: 
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 7
+Time: 247500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 262500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 277500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 292500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 4
+Time: 292500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: numero soglia: 
+Time: 292500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 21
+Time: 292500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 307500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 322500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 337500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 5
+Time: 337500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 337500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 337500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 352500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 367500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 382500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 397500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 6
+Time: 397500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 397500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 397500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 412500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 427500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 442500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 457500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 7
+Time: 457500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 457500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 457500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 472500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 487500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 502500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 517500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 8
+Time: 517500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 517500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 517500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 532500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 547500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 562500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 577500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 9
+Time: 577500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 577500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 577500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 592500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 607500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 622500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 637500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 10
+Time: 637500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 637500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 637500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 652500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 667500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 682500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 697500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 11
+Time: 697500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 697500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 697500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 712500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 727500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 742500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 757500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 12
+Time: 757500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 757500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 757500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 772500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 787500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 802500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 817500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 13
+Time: 817500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 817500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 817500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 832500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 847500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 862500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 877500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 14
+Time: 877500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 877500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 877500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 892500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 907500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 922500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 937500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 15
+Time: 937500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 937500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 937500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: CHECK_PIXEL 
+Time: 952500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: AUMENTA_INDIRIZZO
+Time: 967500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: WAIT_CLOCK_CICLE
+Time: 982500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: stato: LETTURA_BYTE indirizzo:
+Time: 997500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 16
+Time: 997500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: valore pixel: 
+Time: 997500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 0
+Time: 997500 ps  Iteration: 1  Process: /project_tb/UUT/line__56  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
