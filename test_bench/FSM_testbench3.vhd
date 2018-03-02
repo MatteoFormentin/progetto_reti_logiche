@@ -95,7 +95,7 @@ MEM : process(tb_clk)
   
 test : process is
 begin 
-wait for 1000 ns;
+wait for 100 ns;
 wait for c_CLOCK_PERIOD;
 tb_rst <= '1';
 wait for c_CLOCK_PERIOD;

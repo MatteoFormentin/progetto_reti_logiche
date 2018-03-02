@@ -37,6 +37,9 @@ read_vhdl -library xil_defaultlib C:/Progetto_Reti_Logiche/project_reti_logiche/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/timing.xdc
+set_property used_in_implementation false [get_files C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/timing.xdc]
+
 
 synth_design -top project_reti_logiche -part xc7a200tfbg484-1
 

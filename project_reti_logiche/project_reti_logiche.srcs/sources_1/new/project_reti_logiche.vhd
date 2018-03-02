@@ -54,6 +54,7 @@ begin
         
     begin
         if (i_rst = '1') then
+            report "RESET RICEVUTO";
             state <= START_WAIT;
         end if;
         if (rising_edge(i_clk)) then
@@ -61,12 +62,13 @@ begin
             case state is
                 when START_WAIT =>
                     if (i_start = '1') then --INIZIALIZZAZIONE 
+                            report "stato START_WAIT";
                         current_address := "0000000000000000";
                         state <= AUMENTA_INDIRIZZO;
                     end if; 
                    
                 when AUMENTA_INDIRIZZO =>
-                    report "stato: AUMENTA_INDIRIZZO";
+                   -- report "stato: AUMENTA_INDIRIZZO";
                     --LETTURA N_COLONNE
                     if( conv_integer(current_address)= 0) then 
                         o_en <= '1';
@@ -103,7 +105,7 @@ begin
                       end if;
                       
                 when WAIT_CLOCK_CICLE=>
-                     report "stato: WAIT_CLOCK_CICLE";
+                    -- report "stato: WAIT_CLOCK_CICLE";
 --                     wait_check:=wait_check+1;
 --                     if (wait_check >1) then 
 --                        wait_check := 0;
@@ -166,21 +168,33 @@ begin
                      end if;
                                                     
                 when CHECK_PIXEL =>
-                    report "stato: CHECK_PIXEL ";
+                  --  report "stato: CHECK_PIXEL ";
+                  curr_colonna:=(conv_integer(current_address)-5) mod N_COLONNE;
+                  curr_riga:=(conv_integer(current_address)- 5 -curr_colonna)/N_COLONNE;
+                  report "n riga: ";
+                  report integer'image(curr_riga);
+                  report "n colonna: ";
+                  report integer'image(curr_colonna);
                     if (pixel_corrente >= SOGLIA) then
-                        curr_colonna:=conv_integer(current_address) mod N_COLONNE;
-                        curr_riga:=(conv_integer(current_address)- 5 -curr_colonna)/N_COLONNE;
                         if (curr_riga < x_min) then
                             x_min:=curr_riga;
+                            report "valore x_min: ";
+                            report integer'image(x_min);
                         end if;
                         if (curr_colonna < y_min) then
                             y_min:=curr_colonna;
+                            report "valore y_min: ";
+                            report integer'image(y_min);
                         end if;
                         if (curr_riga > x_max) then
                             x_max:=curr_riga;
+                            report "valore x_max: ";
+                            report integer'image(x_max);
                         end if;
                         if (curr_colonna > y_max) then
                             y_max:=curr_colonna;
+                            report "valore y_max: ";
+                            report integer'image(y_max);
                         end if;
                     end if;
                     state <= AUMENTA_INDIRIZZO;
@@ -193,7 +207,7 @@ begin
                     elsif(SOGLIA = 255 or N_COLONNE = 0 or N_RIGHE = 0) then
                         area:="0000000000000000";
                     else
-                        area:= std_logic_vector(to_unsigned((x_max-x_min)*(y_max-y_min),16));
+                        area:= std_logic_vector(to_unsigned((x_max-x_min+1)*(y_max-y_min+1),16));
                     end if;
                     report "valore area: ";
                     report integer'image(conv_integer(area));
@@ -205,14 +219,12 @@ begin
                     
                     --Scrittura Byte più significativo
                     o_address<="0000000000000001"; 
-                    --o_data <= "00000010";
                     o_data <= area (15 downto 8);
                     state <= LSB_WRITE;
                     
                when LSB_WRITE =>
                     --Scrittura Byte meno significativo
                     o_address <= "0000000000000000"; 
-                    --o_data<="00000001";
                     o_data <= area (7 downto 0);
                     state <= DONE_HIGH;
                     
@@ -226,6 +238,6 @@ begin
                     o_done <= '0';
                     
            end case;
-        end if;  
-    end process;  
+        end if;
+    end process;
 end Behavioral;
