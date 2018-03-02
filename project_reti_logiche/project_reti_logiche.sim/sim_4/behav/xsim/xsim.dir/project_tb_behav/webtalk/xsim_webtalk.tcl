@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Fri Mar  2 12:49:38 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Fri Mar  2 17:15:25 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2017.4 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2086221" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "4.000 GB" -context "use
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "10537500 ps" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "16147500 ps" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.12_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "10960_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1550876659 -regid "" -xml C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.06_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "11136_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 4186489625 -regid "" -xml C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

@@ -2,12 +2,12 @@
 # Webtalk v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Mar  2 12:56:55 2018
-# Process ID: 5364
+# Start of session at: Fri Mar  2 16:46:02 2018
+# Process ID: 216
 # Current directory: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim
 # Command line: wbtcv.exe -mode batch -source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/webtalk.log
 # Journal file: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Fri Mar  2 12:56:55 2018...
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar  2 16:46:03 2018...

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"project_tb_func_impl.vhd" \
+"../../../../../../test_bench/FSM_testbench3.vhd" \
+
+# Do not sort compile order
+nosort
