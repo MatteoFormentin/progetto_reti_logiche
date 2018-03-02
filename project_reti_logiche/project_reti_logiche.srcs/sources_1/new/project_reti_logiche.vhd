@@ -254,8 +254,9 @@ begin
                     state <= CONV_AREA_TO_BIT;
                 
                 when CONV_AREA_TO_BIT =>
-                    area:=std_logic_vector(to_unsigned((altezza)*(lunghezza),16));
+                    area:=std_logic_vector(to_unsigned(area_int, 16));
                     state <= MSB_WRITE;
+                    
                 when MSB_WRITE =>
                     o_en <= '1';
                     o_we <= '1';
