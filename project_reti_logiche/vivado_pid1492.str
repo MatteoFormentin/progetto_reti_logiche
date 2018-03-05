@@ -1,0 +1,1159 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 1492
+License: Customer
+
+Current time: 	Mon Mar 05 21:59:40 CET 2018
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 1
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 29 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Matteo Formentin
+User home directory: C:/Users/Matteo Formentin
+User working directory: C:/Progetto_Reti_Logiche/project_reti_logiche
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.log
+Vivado journal file location: 	C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.jou
+Engine tmp dir: 	C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-1492-DESKTOP-3NU7J11
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,066 MB
+Engine allocated memory: 467 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 45 MB (+44277kb) [00:00:15]
+// [Engine Memory]: 467 MB (+338360kb) [00:00:15]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Progetto_Reti_Logiche\project_reti_logiche\project_reti_logiche.xpr. Version: Vivado v2017.4 
+// Tcl Message: open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 62 MB (+15620kb) [00:00:22]
+// [Engine Memory]: 497 MB (+7201kb) [00:00:22]
+// [GUI Memory]: 75 MB (+10952kb) [00:00:23]
+// [Engine Memory]: 526 MB (+3546kb) [00:00:25]
+// [GUI Memory]: 84 MB (+5228kb) [00:00:27]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 520.586 ; gain = 44.496 
+// HMemoryUtils.trashcanNow. Engine heap size: 540 MB. GUI used memory: 43 MB. Current time: 3/5/18 9:59:52 PM CET
+// Project name: project_reti_logiche; location: C:/Progetto_Reti_Logiche/project_reti_logiche; part: xc7a200tfbg484-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// Elapsed time: 24 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3); // B (D, cj)
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 3, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z (ai, cj)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z (ai, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, "Edit Simulation Sets..."); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS
+// at (cj): Add Sources: addNotify
+selectComboBox(PAResourceQtoS.SrcChooserPanel_ADD_FILES_BELOW_TO_THIS_SIMULATION_SET, "Create Simulation Set...", 4); // bt (aY, at)
+// HMemoryUtils.trashcanNow. Engine heap size: 552 MB. GUI used memory: 44 MB. Current time: 3/5/18 10:01:12 PM CET
+setText("PAResourceQtoS.SrcChooserPanel_ENTER_SIMULATION_SET_NAME", "sim_extra_1"); // BasicOptionPaneUI.MultiplexingTextField (A, H)
+// TclEventType: FILE_SET_NEW
+selectButton("PAResourceQtoS.SrcChooserPanel_ENTER_SIMULATION_SET_NAME_OK", "OK"); // JButton (A, H)
+// Tcl Message: create_fileset -simset sim_extra_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (C, at)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+setFileChooser("C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd");
+// TclEventType: DG_GRAPH_GENERATED
+selectButton("FINISH", "Finish"); // JButton (h, at)
+// 'as' command handler elapsed time: 16 seconds
+dismissDialog("Add Sources"); // at (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// bs (cj):  Add Simulation Sources  : addNotify
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_extra_1] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_extra_1 -norecurse C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+dismissDialog("Add Simulation Sources"); // bs (cj)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 95 MB (+7492kb) [00:02:03]
+// Tcl Message: update_compile_order -fileset sim_extra_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_extra_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1]", 4); // B (D, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// PAPropertyPanels.initPanels (project_reti_logiche.vhd) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1, project_tb(projecttb) (FSM_testbenchExtra1.vhd), UUT : project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 6, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1, project_tb(projecttb) (FSM_testbenchExtra1.vhd), UUT : project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 6, false, false, false, false, false, true); // B (D, cj) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1, project_tb(projecttb) (FSM_testbenchExtra1.vhd)]", 5, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1, project_tb(projecttb) (FSM_testbenchExtra1.vhd)]", 5, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// [Engine Memory]: 562 MB (+10399kb) [00:02:19]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 51 MB. Current time: 3/5/18 10:01:47 PM CET
+selectCodeEditor("FSM_testbenchExtra1.vhd", 97, 141); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 280, 144); // cd (w, cj)
+// Elapsed time: 81 seconds
+selectCodeEditor("FSM_testbenchExtra1.vhd", 356, 142); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 356, 142, false, false, false, false, true); // cd (w, cj) - Double Click
+selectMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_VIEW, "View"); // U (q, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 370, 190); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 365, 153); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 365, 152, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbenchExtra1.vhd", 365, 152); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 360, 145); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 360, 145, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "FSM_testbenchExtra1.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 380, 194); // cd (w, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM_testbenchExtra1.vhd", 257, 143); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 257, 143, false, false, false, false, true); // cd (w, cj) - Double Click
+typeControlKey((HResource) null, "FSM_testbenchExtra1.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 312, 183); // cd (w, cj)
+// Elapsed time: 12 seconds
+selectCodeEditor("FSM_testbenchExtra1.vhd", 357, 176); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("FSM_testbenchExtra1.vhd", 855, 143); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 492, 147); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 511, 142); // cd (w, cj)
+// Elapsed time: 168 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 1, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, project_reti_logiche(Behavioral) (project_reti_logiche.vhd)]", 1, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("project_reti_logiche.vhd", 254, 218); // cd (w, cj)
+selectCodeEditor("project_reti_logiche.vhd", 572, 211); // cd (w, cj)
+selectCodeEditor("project_reti_logiche.vhd", 527, 264); // cd (w, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 1); // k (j, cj)
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+// Elapsed time: 10 seconds
+selectCodeEditor("FSM_testbenchExtra1.vhd", 395, 248); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 440, 248); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 396, 249); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 401, 249); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_testbenchExtra1.vhd", 'c'); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_testbenchExtra1.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 534, 249); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 536, 250); // cd (w, cj)
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// am (cj): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (am)
+// bs (cj):  Save Constraints : addNotify
+// e (cj):  Run Simulation : addNotify
+dismissDialog("Save Project"); // am (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset sim_2 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_2' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_2'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2017.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// HMemoryUtils.trashcanNow. Engine heap size: 592 MB. GUI used memory: 59 MB. Current time: 3/5/18 10:08:29 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [Engine Memory]: 592 MB (+2340kb) [00:09:07]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: Note: stato: CALC_AREA  Time: 307500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd Failure: Simulation Ended!, test passed Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd $finish called at time : 412500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" Line 116 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 617.836 ; gain = 23.516 
+// 'd' command handler elapsed time: 11 seconds
+// Elapsed time: 10 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 106 MB (+5829kb) [00:09:09]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("FSM_testbench2.vhd", 141, 271); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 141, 272, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 141, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 141, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 141, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 141, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 140, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 140, 272, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 140, 272); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 86, 279); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 86, 279, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 86, 279); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 86, 279); // cd (w, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbench2.vhd", 3); // k (j, cj)
+selectCodeEditor("FSM_testbench2.vhd", 140, 474); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 257, 398); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 257, 398, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 257, 398); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 249, 436); // cd (w, cj)
+// Elapsed time: 43 seconds
+typeControlKey((HResource) null, "FSM_testbench2.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 157, 455); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 157, 455, false, false, false, false, true); // cd (w, cj) - Double Click
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 0); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche.vhd", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbench2.vhd", 3); // k (j, cj)
+selectCodeEditor("FSM_testbench2.vhd", 198, 444); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 198, 444, false, false, false, false, true); // cd (w, cj) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 606 MB. GUI used memory: 54 MB. Current time: 3/5/18 10:10:28 PM CET
+selectCodeEditor("FSM_testbench2.vhd", 293, 514); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 233, 452); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 51, 414); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 72, 395, false, false, true, false, false); // cd (w, cj) - Alt Key
+selectCodeEditor("FSM_testbench2.vhd", 51, 399); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 90, 393); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 44, 414); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_testbench2.vhd", 'c'); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 230, 453); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_testbench2.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 295, 484); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 413, 382); // cd (w, cj)
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aw (f, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ac (cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// x (cj): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Run Synthesis"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cj): Save Simulation Sources: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (cj):  Run Simulation : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 13 seconds
+dismissDialog("Save Simulation Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset sim_2 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_2' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_2'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// Tcl Message: Built simulation snapshot project_tb_behav 
+// Tcl Message:  ****** Webtalk v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:11:31 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.875 ; gain = 1.129 INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:11:31 2018... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 60 MB. Current time: 3/5/18 10:11:33 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: Note: stato: CALC_AREA  Time: 307500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd Note: 168 Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd Note: stato: CALC_AREA  Time: 712500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd Note: 168 Time: 817500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// 'd' command handler elapsed time: 35 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// Elapsed time: 24 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1110, 42); // dw (ad, cj)
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ax (aF, cj)
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 61 MB. Current time: 3/5/18 10:12:21 PM CET
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbench2.vhd", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 1); // k (j, cj)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 1, false, true); // k (j, cj) - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche.vhd", 0); // k (j, cj)
+selectCodeEditor("project_reti_logiche.vhd", 363, 269); // cd (w, cj)
+// Elapsed time: 50 seconds
+selectCodeEditor("project_reti_logiche.vhd", 139, 79); // cd (w, cj)
+selectCodeEditor("project_reti_logiche.vhd", 463, 79); // cd (w, cj)
+selectCodeEditor("project_reti_logiche.vhd", 463, 79, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("project_reti_logiche.vhd", 463, 79); // cd (w, cj)
+// Elapsed time: 136 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 1); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche.vhd", 0); // k (j, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cj): Save Simulation Sources: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+selectCheckBox((HResource) null, "project_reti_logiche.vhd", true); // g (N, c): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (cj):  Run Simulation : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// Elapsed time: 12 seconds
+dismissDialog("Save Simulation Sources"); // c (cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: launch_simulation -simset sim_2 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_2' 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_2'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_reti_logiche 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:16:26 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.980 ; gain = 1.293 INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:16:26 2018... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 66 MB. Current time: 3/5/18 10:16:28 PM CET
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: Note: 168 Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd Note: 168 Time: 817500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 641.574 ; gain = 0.000 
+// 'd' command handler elapsed time: 33 seconds
+// Elapsed time: 18 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 618 MB. GUI used memory: 57 MB. Current time: 3/5/18 10:16:54 PM CET
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "project_reti_logiche.vhd", 1); // k (j, cj)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "RAM[65535:0][7:0] ; 00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,... ; Array", 9, "RAM[65535:0][7:0]", 0, true); // n (c, cj) - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbench2.vhd", 2); // k (j, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectCodeEditor("FSM_testbench2.vhd", 686, 220); // cd (w, cj)
+// Elapsed time: 105 seconds
+selectCodeEditor("FSM_testbench2.vhd", 138, 423); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 138, 423, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 138, 423); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 155, 394); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 155, 395, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 155, 395); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 268, 152); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 268, 152); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FSM_testbench2.vhd", 192, 448); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 192, 448, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 192, 448); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 209, 450); // cd (w, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+selectMenuItem(RDIResourceCommand.RDICommands_REDO, "Redo"); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // U (q, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FSM_testbench2.vhd", 90, 457); // cd (w, cj)
+selectCodeEditor("FSM_testbench2.vhd", 90, 457, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbench2.vhd", 90, 457); // cd (w, cj)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aw (f, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_RUN_SYNTHESIS, "Run Synthesis"); // ac (cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// x (cj): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (x)
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 2); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cj): Save Simulation Sources: addNotify
+// Elapsed time: 12 seconds
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+selectCheckBox((HResource) null, "FSM_testbench2.vhd", true); // g (N, c): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// e (cj):  Run Simulation : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 663.480 ; gain = 0.000 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 11 seconds
+dismissDialog("Save Simulation Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset sim_2 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_2' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_2'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' 
+// Tcl Message: Built simulation snapshot project_tb_behav  ****** Webtalk v2017.4 (64-bit)   **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017   **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017     ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.  source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:20:44 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.867 ; gain = 1.129 INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:20:44 2018... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 663.480 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 63 MB. Current time: 3/5/18 10:20:46 PM CET
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: Failure: Simulation Ended!, test passed Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd $finish called at time : 412500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" Line 116 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 663.480 ; gain = 0.000 
+// 'd' command handler elapsed time: 41 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// Elapsed time: 21 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // aF (Q, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1]", 4, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_extra_1]", 4, true, false, false, false, true, false); // B (D, cj) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RESET, "Reset Simulation"); // Z (ai, cj)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // Z (ai, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cj):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// Tcl Message: launch_simulation -simset sim_extra_1 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_extra_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_reti_logiche INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:21:28 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html. webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.883 ; gain = 1.082 INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:21:28 2018... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 663.480 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 69 MB. Current time: 3/5/18 10:21:30 PM CET
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 663.480 ; gain = 0.000 
+// 'd' command handler elapsed time: 16 seconds
+// Elapsed time: 16 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// [GUI Memory]: 112 MB (+1166kb) [00:22:10]
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 70 MB. Current time: 3/5/18 10:21:36 PM CET
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbench2.vhd", 2); // k (j, cj)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FSM_testbenchExtra1.vhd", 1); // k (j, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 129, 97); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 129, 97, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbenchExtra1.vhd", 129, 97); // cd (w, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 11 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // R (Q, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 793, 299); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbenchExtra1.vhd", 451, 418); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 425, 443); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 425, 443, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("FSM_testbenchExtra1.vhd", 425, 443); // cd (w, cj)
+typeControlKey((HResource) null, "FSM_testbenchExtra1.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 237, 444); // cd (w, cj)
+selectCodeEditor("FSM_testbenchExtra1.vhd", 237, 444, false, false, false, false, true); // cd (w, cj) - Double Click
+selectButton(PAResourceItoN.MainToolbarMgr_RUN, (String) null); // aw (f, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// c (cj): Save Simulation Sources: addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (cj):  Run Simulation : addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// Tcl Message: close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 673.660 ; gain = 0.207 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+dismissDialog("Save Simulation Sources"); // c (cj)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset sim_extra_1 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_extra_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd" into library xil_defaultlib INFO: [VRFC 10-307] analyzing entity project_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1000ns 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 674.695 ; gain = 1.035 
+// 'd' command handler elapsed time: 24 seconds
+dismissDialog("Run Simulation"); // e (cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 104 MB. Current time: 3/5/18 10:22:42 PM CET
+maximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ax (aF, cj)
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+unMaximizeFrame(PAResourceOtoP.PAViews_TCL_CONSOLE, "Tcl Console"); // ax (aF, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 68 MB. Current time: 3/5/18 10:22:53 PM CET
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "tb_clk ; 1 ; Logic", 4, "1", 1, false); // n (c, cj)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "c_CLOCK_PERIOD ; 15000 ps ; Physical Type", 10, "c_CLOCK_PERIOD", 0, false); // n (c, cj)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "UUT ; project_reti_logiche(Behavioral) ; VHDL Entity", 1, "VHDL Entity", 2, false); // d (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation]", 9, true, false, false, false, true, false); // u (O, cj) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_SETTINGS, "Simulation Settings..."); // ac (ai, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// v (cj): Settings: addNotify
+// [Engine Memory]: 630 MB (+8973kb) [00:23:48]
+// [GUI Memory]: 126 MB (+8232kb) [00:23:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 640 MB. GUI used memory: 85 MB. Current time: 3/5/18 10:23:11 PM CET
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ELABORATION, "Elaboration", 1); // i (N, v)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // i (N, v)
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (v)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property -name {xsim.simulate.runtime} -value {1s} -objects [get_filesets sim_extra_1] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (v)
+// [GUI Memory]: 132 MB (+412kb) [00:23:59]
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // B (f, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x (cj): Synthesis is Out-of-date: addNotify
+dismissDialog("Settings"); // v (cj)
+selectButton(RDIResource.BaseDialog_NO, "No"); // a (x)
+// f (cj): Launch Runs: addNotify
+dismissDialog("Synthesis is Out-of-date"); // x (cj)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+dismissDialog("Launch Runs"); // f (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// Waveform: addNotify
+// Waveform: addNotify
+// Waveform: addNotify
+// e (cj):  Run Simulation : addNotify
+selectButton("PAResourceQtoS.SimulationRun_SIMULATION_ALREADY_RUNNING_DO_YOU_Yes", "Yes"); // JButton (A, G)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: close_sim 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -simset sim_extra_1 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_extra_1' INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// TclEventType: LAUNCH_SIM
+// Tcl Message: "xvhdl --incr --relax -prj project_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2017.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2017.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// [Engine Memory]: 665 MB (+3198kb) [00:24:15]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 678 MB. GUI used memory: 87 MB. Current time: 3/5/18 10:23:55 PM CET
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// Tcl Message: Time resolution is 1 ps 
+// Tcl Message: source project_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// Tcl Message: # run 1s 
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 99 MB. Current time: 3/5/18 10:24:07 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 679 MB. GUI used memory: 78 MB. Current time: 3/5/18 10:24:21 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 87 MB. Current time: 3/5/18 10:24:39 PM CET
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 78 MB. Current time: 3/5/18 10:25:07 PM CET
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 79 MB. Current time: 3/5/18 10:25:42 PM CET
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 80 MB. Current time: 3/5/18 10:26:06 PM CET
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking too long to process. Increasing delay to 4000 ms.
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 680 MB. GUI used memory: 79 MB. Current time: 3/5/18 10:30:30 PM CET
+// Tcl Message: Note: 48 Time: 471757207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 473557807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 475358407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 477159007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 176 Time: 478959607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 480760207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 482560807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 484361407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 48 Time: 486162007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 487962607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 489763207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 491563807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 176 Time: 493364407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 495165007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 496965607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 16 Time: 498766207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 500566807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 502367407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 504168007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 144 Time: 505968607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 507769207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 509569807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 240 Time: 511370407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 513171007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 514971607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 516772207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 112 Time: 518572807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 520373407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 522174007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 523974607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 240 Time: 525775207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 527575807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 529376407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 531177007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 112 Time: 532977607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 534778207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 536578807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 538379407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 540180007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 16 Time: 541980607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 543781207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 545581807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 547382407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 144 Time: 549183007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 550983607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 552784207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 554584807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 556385407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 48 Time: 558186007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 559986607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 561787207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 563587807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 565388407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 208 Time: 567189007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 568989607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 570790207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 572590807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 80 Time: 574391407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 576192007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 577992607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 579793207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 208 Time: 581593807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 583394407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 585195007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 586995607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 80 Time: 588796207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 590596807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 592397407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 594198007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 595998607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 240 Time: 597799207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 599599807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 601400407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 603201007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 112 Time: 605001607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 606802207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 608602807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 610403407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 612204007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 16 Time: 614004607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 615805207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 617605807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 619406407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 144 Time: 621207007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 623007607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 624808207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 626608807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 16 Time: 628409407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 630210007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 632010607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 633811207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 144 Time: 635611807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 637412407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 639213007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 641013607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 642814207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 48 Time: 644614807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 646415407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 648216007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 650016607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 176 Time: 651817207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 653617807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 655418407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 657219007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 48 Time: 659019607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 660820207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 662620807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 664421407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 176 Time: 666222007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 668022607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 240 Time: 669823207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 671623807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 673424407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 80 Time: 675225007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 677025607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 678826207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 680626807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 240 Time: 698632807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 700433407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 702234007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 80 Time: 704034607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 112 Time: 705835207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 144 Time: 707635807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 176 Time: 709436407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 208 Time: 711237007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 240 Time: 713037607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 16 Time: 714838207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 48 Time: 716638807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 80 Time: 718439407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 248 Time: 731043607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 24 Time: 732844207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 56 Time: 734644807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 88 Time: 736445407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 120 Time: 738246007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 152 Time: 740046607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 184 Time: 741847207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 216 Time: 743647807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 248 Time: 745448407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Tcl Message: Note: 24 Time: 747249007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 56 Time: 749049607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 88 Time: 750850207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd Note: 120 Time: 752650807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd 
+// Elapsed time: 418 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS

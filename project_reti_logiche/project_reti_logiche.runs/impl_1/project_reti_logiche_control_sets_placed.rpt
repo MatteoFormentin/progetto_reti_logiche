@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Sat Mar  3 01:02:20 2018
+| Date         : Tue Mar  6 00:32:24 2018
 | Host         : DESKTOP-3NU7J11 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file project_reti_logiche_control_sets_placed.rpt
 | Design       : project_reti_logiche
@@ -22,8 +22,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    19 |
-| Unused register locations in slices containing registers |    32 |
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    48 |
 +----------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |               1 |            1 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             241 |           71 |
+| Yes          | No                    | No                     |             113 |           34 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              47 |           13 |
+| Yes          | Yes                   | No                     |             174 |           55 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -48,33 +48,36 @@ Table of Contents
 +------------------+---------------------------+-----------------------------+------------------+----------------+
 |   Clock Signal   |       Enable Signal       |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
 +------------------+---------------------------+-----------------------------+------------------+----------------+
-|  i_clk_IBUF_BUFG | o_we_i_1_n_0              |                             |                1 |              1 |
+|  i_clk_IBUF_BUFG |                           |                             |                1 |              1 |
 |  i_clk_IBUF_BUFG | o_address[0]_i_1_n_0      |                             |                1 |              1 |
-|  i_clk_IBUF_BUFG | o_en_i_1_n_0              |                             |                1 |              1 |
 |  i_clk_IBUF_BUFG | o_done_i_1_n_0            |                             |                1 |              1 |
-|  i_clk_IBUF_BUFG | state[4]_i_1_n_0          |                             |                3 |              5 |
-|  i_clk_IBUF_BUFG | N_RIGHE0                  |                             |                2 |              8 |
-|  i_clk_IBUF_BUFG | N_COLONNE0                |                             |                3 |              8 |
+|  i_clk_IBUF_BUFG | o_en_i_1_n_0              |                             |                1 |              1 |
+|  i_clk_IBUF_BUFG | o_we_i_1_n_0              |                             |                1 |              1 |
+|  i_clk_IBUF_BUFG | state[4]_i_1_n_0          |                             |                4 |              5 |
+|  i_clk_IBUF_BUFG | y_min                     | y_min[16]_i_1_n_0           |                2 |              6 |
+|  i_clk_IBUF_BUFG | current_address3_i_1_n_0  |                             |                3 |              8 |
+|  i_clk_IBUF_BUFG | o_data[7]_i_1_n_0         |                             |                3 |              8 |
+|  i_clk_IBUF_BUFG | pixel_corrente[7]_i_1_n_0 |                             |                3 |              8 |
+|  i_clk_IBUF_BUFG | N_RIGHE[7]_i_1_n_0        |                             |                2 |              8 |
 |  i_clk_IBUF_BUFG | SOGLIA0                   |                             |                2 |              8 |
-|  i_clk_IBUF_BUFG | o_data[7]_i_1_n_0         |                             |                2 |              8 |
-|  i_clk_IBUF_BUFG | pixel_corrente[7]_i_1_n_0 |                             |                2 |              8 |
-|  i_clk_IBUF_BUFG | o_address[0]_i_1_n_0      | o_address[15]_i_1_n_0       |                5 |             15 |
-|  i_clk_IBUF_BUFG | area[15]_i_2_n_0          | area[15]_i_1_n_0            |                4 |             16 |
+|  i_clk_IBUF_BUFG | o_address[0]_i_1_n_0      | o_address[15]_i_1_n_0       |                4 |             15 |
 |  i_clk_IBUF_BUFG | current_address           | current_address[15]_i_1_n_0 |                4 |             16 |
-|  i_clk_IBUF_BUFG | curr_colonna[0]_i_1_n_0   |                             |                8 |             32 |
-|  i_clk_IBUF_BUFG | curr_riga0                |                             |                8 |             32 |
-|  i_clk_IBUF_BUFG | x_max[31]_i_1_n_0         |                             |                9 |             32 |
-|  i_clk_IBUF_BUFG | y_max[31]_i_1_n_0         |                             |                9 |             32 |
-|  i_clk_IBUF_BUFG | x_min[31]_i_1_n_0         |                             |                9 |             32 |
-|  i_clk_IBUF_BUFG | y_min[31]_i_1_n_0         |                             |               10 |             32 |
+|  i_clk_IBUF_BUFG | area[15]_i_2_n_0          | area[15]_i_1_n_0            |                6 |             16 |
+|  i_clk_IBUF_BUFG | y_min                     | y_min[31]_i_1_n_0           |                9 |             26 |
+|  i_clk_IBUF_BUFG | x_max                     | x_max[31]_i_1_n_0           |                9 |             31 |
+|  i_clk_IBUF_BUFG | x_min                     | x_min[31]_i_1_n_0           |               11 |             32 |
+|  i_clk_IBUF_BUFG | y_max                     | y_max[31]_i_1_n_0           |               10 |             32 |
+|  i_clk_IBUF_BUFG | curr_colonna[31]_i_1_n_0  |                             |                7 |             32 |
+|  i_clk_IBUF_BUFG | curr_riga[31]_i_1_n_0     |                             |                6 |             32 |
 +------------------+---------------------------+-----------------------------+------------------+----------------+
 
 
 +--------+-----------------------+
 | Fanout | Number of ControlSets |
 +--------+-----------------------+
-| 1      |                     4 |
+| 1      |                     5 |
 | 5      |                     1 |
+| 6      |                     1 |
 | 8      |                     5 |
 | 15     |                     1 |
 | 16+    |                     8 |

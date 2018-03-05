@@ -1,23 +1,10 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 07.01.2018 17:00:32
--- Design Name: 
--- Module Name: project_reti_logiche - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
+------------------------------------------------------------------------------------------------------
+--  PROGETTO RETI LOGICHE 2017/18 - INGEGNERIA INFORMATICA - Sezione Prof. Fabrizio Ferrandi
+--
+--  Matteo Formentin (codice persona 10499388, matricola 843851)
+--  Luca Genoni (codice persona 10520445, matricola 847187) 
+--
+------------------------------------------------------------------------------------------------------
 
 library IEEE;
 USE ieee.std_logic_1164.ALL;
@@ -39,19 +26,22 @@ entity project_reti_logiche is
 end project_reti_logiche;
 
 architecture Behavioral of project_reti_logiche is
+    --Viene creato un tipo per rappresentare i possibili stati del componente
     type state_type is (START_WAIT, AUMENTA_INDIRIZZO, WAIT_CLOCK_CICLE, LETTURA_BYTE,
        CALC_RIGA, CALC_COLONNA, CHECK_PIXEL, CHECK_X_MAX, CHECK_X_MIN, CHECK_Y_MIN, CHECK_Y_MAX,
        CALC_AREA, CALC_ALTEZZA, CALC_LUNGHEZZA, MOLT_ALTEZZA_LUNGHEZZA, CONV_AREA_TO_BIT, MSB_WRITE, LSB_WRITE, DONE_HIGH, DONE_LOW);
-    signal state : state_type;
+    signal state : state_type; --Questa variabile tiene traccia tra le varie chiamate del processo dello stato in cui si trova il componente
 begin
-    process(i_clk, i_rst)
+    process(i_clk, i_rst)     --il processo è eseguito ad commutazione del clock, la sincronizzazione sul fronte di salita è eseguita successivamente 
+                              --i_rst è stato inserito nella sensitivity list per permettere reset asincroni
+                              
         variable N_COLONNE, N_RIGHE, SOGLIA : integer;              --Variabili che contengono i valori dell'header     
         variable curr_riga, curr_colonna: integer :=-1;             --Variabili che tengono traccia della riga e colonna corrente
         variable current_address : std_logic_vector(15 downto 0);   --Variabili che contengono l'indirizzo di lettura attuale della RAM
         variable pixel_corrente : integer;                          --Variabili che contiene il valore dell'ultimo pixel letto
         variable x_min, y_min :integer :=70000;                     --Variabili che contengono gli indirizzi di colonna più esterni dell'immagine
         variable x_max, y_max :integer :=0;                         --Variabili che contengono gli indirizzi di riga più esterni dell'immagine
-        variable altezza, lunghezza, area_int :integer;             --Variabili usate per il calcolo finale dell'immagine
+        variable altezza, lunghezza, area_int :integer;             --Variabili usate per il calcolo finale dell'area dell'immagine
         variable area: std_logic_vector(15 downto 0);               --Variabili che contiene il valore finale binario dell'area da scrivere
         
     begin
@@ -61,8 +51,14 @@ begin
         if (rising_edge(i_clk)) then --Sincronizzazione sul fronte di salita del clock
             case state is
                 when START_WAIT => 
-                    if (i_start = '1') then --Attendi il segnsle di start
+                    if (i_start = '1') then --Attendi il segnale di start
+                        curr_riga:=-1; --Inizializzazione variabili
+                        curr_colonna :=-1;
                         current_address := "0000000000000000";
+                        x_min:=70000;
+                        y_min:=70000;  
+                        x_max:=0;                      
+                        y_max:=0;                      
                         state <= AUMENTA_INDIRIZZO;
                     end if; 
                    
@@ -192,7 +188,6 @@ begin
                     state <= AUMENTA_INDIRIZZO;               
                                     
                 when CALC_AREA => --Decide come verrà calcolata l'area
-                    report "stato: CALC_AREA ";
                     --Calcolo Area
                     if(SOGLIA = 0) then
                         altezza:=N_RIGHE;

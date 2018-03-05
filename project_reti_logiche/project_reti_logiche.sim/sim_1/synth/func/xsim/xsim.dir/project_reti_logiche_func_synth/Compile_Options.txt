@@ -1,1 +1,0 @@
--wto "0768c9d3d970421fad8df8aef60be9ad" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "project_reti_logiche_func_synth" "xil_defaultlib.project_reti_logiche" -log "elaborate.log" 

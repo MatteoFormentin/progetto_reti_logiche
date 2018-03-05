@@ -1,0 +1,1407 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Mar  5 21:58:57 2018
+# Process ID: 1492
+# Current directory: C:/Progetto_Reti_Logiche/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7080 C:\Progetto_Reti_Logiche\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.log
+# Journal file: C:/Progetto_Reti_Logiche/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 520.586 ; gain = 44.496
+update_compile_order -fileset sources_1
+create_fileset -simset sim_extra_1
+set_property SOURCE_SET sources_1 [get_filesets sim_extra_1]
+add_files -fileset sim_extra_1 -norecurse C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+update_compile_order -fileset sim_extra_1
+update_compile_order -fileset sim_extra_1
+launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Note: stato: CALC_AREA 
+Time: 307500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Failure: Simulation Ended!, test passed
+Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+$finish called at time : 412500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 617.836 ; gain = 23.516
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 641.574 ; gain = 0.000
+launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:11:31 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.875 ; gain = 1.129
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:11:31 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 641.574 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Note: stato: CALC_AREA 
+Time: 307500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 168
+Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+Note: stato: CALC_AREA 
+Time: 712500 ps  Iteration: 1  Process: /project_tb/UUT/line__47  File: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd
+Note: 168
+Time: 817500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 641.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 641.574 ; gain = 0.000
+launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:16:26 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.980 ; gain = 1.293
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:16:26 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 641.574 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Note: 168
+Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+Note: 168
+Time: 817500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:18 . Memory (MB): peak = 641.574 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 663.480 ; gain = 0.000
+launch_simulation -simset sim_2
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_2'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_2'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_2'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:20:44 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.867 ; gain = 1.129
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:20:44 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 663.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_2/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_2:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+Failure: Simulation Ended!, test passed
+Time: 412500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd
+$finish called at time : 412500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd" Line 116
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 663.480 ; gain = 0.000
+launch_simulation -simset sim_extra_1
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_extra_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim/xsim.dir/project_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Mar  5 22:21:28 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.883 ; gain = 1.082
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar  5 22:21:28 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 663.480 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 663.480 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 673.660 ; gain = 0.207
+launch_simulation -simset sim_extra_1
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_extra_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 674.695 ; gain = 1.035
+set_property -name {xsim.simulate.runtime} -value {1s} -objects [get_filesets sim_extra_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/sources_1/new/project_reti_logiche.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Progetto_Reti_Logiche/test_bench/FSM_testbench2.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset sim_extra_1
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_extra_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_extra_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_extra_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_behav xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_behav -key {Behavioral:sim_extra_1:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1s
+Note: 1
+Time: 1800607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 202
+Time: 3601207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 91
+Time: 5401807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 180
+Time: 7202407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 213
+Time: 9003007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 190
+Time: 10803607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 111
+Time: 12604207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 232
+Time: 14404807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 41
+Time: 16205407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 50
+Time: 18006007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 3
+Time: 19806607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 156
+Time: 21607207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 253
+Time: 23407807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 38
+Time: 25208407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 23
+Time: 27009007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 28809607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 81
+Time: 30610207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 154
+Time: 32410807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 171
+Time: 34211407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 132
+Time: 36012007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 37
+Time: 37812607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 142
+Time: 39613207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 191
+Time: 41413807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 43214407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 121
+Time: 45015007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 2
+Time: 46815607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 83
+Time: 48616207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 108
+Time: 50416807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 77
+Time: 52217407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 246
+Time: 54018007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 103
+Time: 55818607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 160
+Time: 57619207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 161
+Time: 59419807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 106
+Time: 61220407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 251
+Time: 63021007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 84
+Time: 64821607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 117
+Time: 66622207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 94
+Time: 68422807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 15
+Time: 70223407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 136
+Time: 72024007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 201
+Time: 73824607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 210
+Time: 75625207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 163
+Time: 77425807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 60
+Time: 79226407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 157
+Time: 81027007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 198
+Time: 82827607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 183
+Time: 84628207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 86428807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 241
+Time: 88229407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 58
+Time: 90030007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 75
+Time: 91830607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 36
+Time: 93631207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 197
+Time: 95431807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 46
+Time: 97232407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 95
+Time: 99033007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 100833607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 25
+Time: 102634207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 162
+Time: 104434807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 243
+Time: 106235407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 12
+Time: 108036007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 237
+Time: 109836607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 150
+Time: 111637207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 7
+Time: 113437807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 64
+Time: 115238407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 65
+Time: 117039007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 10
+Time: 118839607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 155
+Time: 120640207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 244
+Time: 122440807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 21
+Time: 124241407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 254
+Time: 126042007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 175
+Time: 127842607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 40
+Time: 129643207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 105
+Time: 131443807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 114
+Time: 133244407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 67
+Time: 135045007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 220
+Time: 136845607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 61
+Time: 138646207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 102
+Time: 140446807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 87
+Time: 142247407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 144048007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 145
+Time: 145848607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 218
+Time: 147649207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 235
+Time: 149449807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 196
+Time: 151250407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 101
+Time: 153051007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 206
+Time: 154851607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 255
+Time: 156652207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 158452807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 185
+Time: 160253407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 66
+Time: 162054007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 147
+Time: 163854607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 172
+Time: 165655207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 141
+Time: 167455807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 54
+Time: 169256407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 167
+Time: 171057007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 224
+Time: 172857607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 225
+Time: 174658207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 170
+Time: 176458807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 59
+Time: 178259407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 148
+Time: 180060007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 181
+Time: 181860607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 158
+Time: 183661207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 79
+Time: 185461807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 200
+Time: 187262407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 9
+Time: 189063007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 18
+Time: 190863607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 227
+Time: 192664207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 124
+Time: 194464807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 221
+Time: 196265407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 6
+Time: 198066007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 247
+Time: 199866607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 201667207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 49
+Time: 203467807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 122
+Time: 205268407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 139
+Time: 207069007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 100
+Time: 208869607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 5
+Time: 210670207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 110
+Time: 212470807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 159
+Time: 214271407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 216072007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 89
+Time: 217872607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 226
+Time: 219673207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 51
+Time: 221473807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 76
+Time: 223274407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 45
+Time: 225075007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 214
+Time: 226875607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 71
+Time: 228676207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 128
+Time: 230476807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 129
+Time: 232277407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 74
+Time: 234078007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 219
+Time: 235878607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 52
+Time: 237679207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 85
+Time: 239479807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 62
+Time: 241280407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 239
+Time: 243081007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 104
+Time: 244881607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 169
+Time: 246682207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 178
+Time: 248482807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 131
+Time: 250283407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 28
+Time: 252084007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 125
+Time: 253884607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 166
+Time: 255685207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 151
+Time: 257485807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 259286407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 209
+Time: 261087007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 26
+Time: 262887607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 43
+Time: 264688207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 4
+Time: 266488807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 165
+Time: 268289407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 14
+Time: 270090007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 63
+Time: 271890607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 273691207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 249
+Time: 275491807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 130
+Time: 277292407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 211
+Time: 279093007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 236
+Time: 280893607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 205
+Time: 282694207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 118
+Time: 284494807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 231
+Time: 286295407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 32
+Time: 288096007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 33
+Time: 289896607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 234
+Time: 291697207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 123
+Time: 293497807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 212
+Time: 295298407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 245
+Time: 297099007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 222
+Time: 298899607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 143
+Time: 300700207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 8
+Time: 302500807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 73
+Time: 304301407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 82
+Time: 306102007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 35
+Time: 307902607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 188
+Time: 309703207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 29
+Time: 311503807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 70
+Time: 313304407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 55
+Time: 315105007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 316905607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 113
+Time: 318706207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 186
+Time: 320506807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 203
+Time: 322307407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 164
+Time: 324108007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 69
+Time: 325908607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 174
+Time: 327709207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 223
+Time: 329509807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 331310407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 153
+Time: 333111007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 34
+Time: 334911607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 115
+Time: 336712207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 140
+Time: 338512807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 109
+Time: 340313407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 22
+Time: 342114007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 135
+Time: 343914607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 192
+Time: 345715207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 193
+Time: 347515807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 138
+Time: 349316407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 27
+Time: 351117007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 116
+Time: 352917607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 149
+Time: 354718207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 126
+Time: 356518807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 47
+Time: 358319407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 168
+Time: 360120007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 361920607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 363721207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 365521807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 367322407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 369123007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 370923607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 372724207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 374524807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 376325407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 378126007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 379926607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 381727207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 383527807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 385328407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 387129007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 388929607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 390730207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 392530807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 394331407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 396132007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 397932607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 399733207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 401533807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 403334407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 405135007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 406935607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 408736207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 410536807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 412337407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 414138007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 415938607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 417739207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 419539807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 421340407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 423141007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 424941607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 426742207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 428542807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 430343407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 432144007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 433944607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 435745207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 437545807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 439346407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 441147007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 442947607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 444748207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 446548807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 448349407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 450150007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 451950607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 453751207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 455551807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 457352407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 459153007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 460953607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 462754207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 464554807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 466355407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 468156007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 469956607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 471757207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 473557807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 475358407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 477159007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 478959607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 480760207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 482560807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 484361407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 486162007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 487962607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 489763207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 491563807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 493364407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 495165007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 496965607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 498766207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 500566807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 502367407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 504168007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 505968607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 507769207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 509569807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 511370407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 513171007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 514971607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 516772207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 518572807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 520373407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 522174007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 523974607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 525775207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 527575807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 529376407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 531177007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 532977607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 534778207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 536578807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 538379407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 540180007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 541980607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 543781207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 545581807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 547382407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 549183007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 550983607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 552784207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 554584807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 556385407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 558186007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 559986607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 561787207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 563587807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 565388407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 567189007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 568989607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 570790207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 572590807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 574391407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 576192007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 577992607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 579793207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 581593807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 583394407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 585195007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 586995607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 588796207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 590596807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 592397407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 594198007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 595998607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 597799207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 599599807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 601400407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 603201007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 605001607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 606802207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 608602807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 610403407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 612204007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 614004607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 615805207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 617605807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 619406407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 621207007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 623007607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 624808207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 626608807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 628409407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 630210007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 632010607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 633811207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 635611807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 637412407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 639213007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 641013607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 642814207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 644614807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 646415407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 648216007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 650016607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 651817207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 653617807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 655418407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 657219007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 659019607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 660820207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 662620807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 664421407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 666222007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 668022607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 669823207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 671623807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 673424407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 675225007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 677025607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 678826207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 680626807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 682427407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 684228007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 686028607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 687829207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 689629807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 691430407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 693231007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 695031607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 696832207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 698632807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 700433407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 702234007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 704034607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 705835207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 144
+Time: 707635807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 176
+Time: 709436407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 208
+Time: 711237007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 240
+Time: 713037607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 16
+Time: 714838207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 48
+Time: 716638807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 80
+Time: 718439407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 112
+Time: 720240007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 722040607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 723841207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 725641807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 727442407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 729243007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 731043607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 732844207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 734644807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 736445407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 738246007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 740046607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 741847207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 743647807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 745448407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 747249007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 749049607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 750850207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 752650807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 754451407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 756252007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 758052607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 759853207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 761653807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 763454407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 765255007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 767055607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 768856207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 770656807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 772457407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 774258007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 776058607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 777859207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 779659807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 781460407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 783261007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 785061607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 786862207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 788662807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 790463407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 792264007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 794064607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 795865207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 797665807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 799466407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 801267007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 803067607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 804868207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 806668807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 808469407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 810270007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 812070607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 813871207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 815671807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 817472407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 819273007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 821073607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 822874207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 824674807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 826475407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 828276007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 830076607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 248
+Time: 831877207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 24
+Time: 833677807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 56
+Time: 835478407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 88
+Time: 837279007500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 120
+Time: 839079607500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 152
+Time: 840880207500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 184
+Time: 842680807500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
+Note: 216
+Time: 844481407500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd
