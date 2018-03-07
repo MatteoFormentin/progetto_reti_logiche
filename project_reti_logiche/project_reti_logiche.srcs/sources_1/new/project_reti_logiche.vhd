@@ -1,4 +1,5 @@
 ------------------------------------------------------------------------------------------------------
+--                                                                                  
 --  PROGETTO RETI LOGICHE 2017/18 - INGEGNERIA INFORMATICA - Sezione Prof. Fabrizio Ferrandi
 --
 --  Matteo Formentin (codice persona 10499388, matricola 843851)
@@ -27,7 +28,7 @@ end project_reti_logiche;
 
 architecture Behavioral of project_reti_logiche is
     --Viene creato un tipo per rappresentare i possibili stati del componente
-    type state_type is (START_WAIT, AUMENTA_INDIRIZZO, WAIT_CLOCK_CICLE, LETTURA_BYTE,
+    type state_type is (START_WAIT, AUMENTA_INDIRIZZO, WAIT_CLOCK_CICLE, LETTURA_BYTE, CALC_DIM,
        CALC_RIGA, CALC_COLONNA, CHECK_PIXEL, CHECK_X_MAX, CHECK_X_MIN, CHECK_Y_MIN, CHECK_Y_MAX,
        CALC_AREA, CALC_ALTEZZA, CALC_LUNGHEZZA, MOLT_ALTEZZA_LUNGHEZZA, CONV_AREA_TO_BIT, MSB_WRITE, LSB_WRITE, DONE_HIGH, DONE_LOW);
     signal state : state_type; --Questa variabile tiene traccia tra le varie chiamate del processo dello stato in cui si trova il componente
@@ -35,7 +36,7 @@ begin
     process(i_clk, i_rst)     --il processo è eseguito ad commutazione del clock, la sincronizzazione sul fronte di salita è eseguita successivamente 
                               --i_rst è stato inserito nella sensitivity list per permettere reset asincroni
                               
-        variable N_COLONNE, N_RIGHE, SOGLIA : integer;              --Variabili che contengono i valori dell'header     
+        variable N_COLONNE, N_RIGHE, SOGLIA, DIM : integer;              --Variabili che contengono i valori dell'header     
         variable curr_riga, curr_colonna: integer :=-1;             --Variabili che tengono traccia della riga e colonna corrente
         variable current_address : std_logic_vector(15 downto 0);   --Variabili che contengono l'indirizzo di lettura attuale della RAM
         variable pixel_corrente : integer;                          --Variabili che contiene il valore dell'ultimo pixel letto
@@ -54,7 +55,7 @@ begin
                     if (i_start = '1') then --Attendi il segnale di start
                         curr_riga:=-1; --Inizializzazione variabili
                         curr_colonna :=-1;
-                        current_address := "0000000000000000";
+                        current_address := "0000000000000001";
                         x_min:=70000;
                         y_min:=70000;  
                         x_max:=0;                      
@@ -63,40 +64,25 @@ begin
                     end if; 
                    
                 when AUMENTA_INDIRIZZO =>
-                    --LETTURA N_COLONNE
-                    if( conv_integer(current_address)= 0) then 
+                    --LETTURA HEADER
+                    if( conv_integer(current_address)<=3) then 
                         o_en <= '1';
                         o_we <= '0';
-                        current_address := current_address + "0000000000000010"; --2
+                        current_address := current_address + "0000000000000001"; --2
                         o_address <= current_address;
                         state <= WAIT_CLOCK_CICLE;
-
-                    --LETTURA N_RIGHE
-                    elsif( conv_integer(current_address)= 2) then 
-                        o_en <= '1';
-                        o_we <= '0';
-                        current_address := current_address + "0000000000000001"; --3
-                        o_address <= current_address;
-                        state <= WAIT_CLOCK_CICLE;
-                    
-                     --LETTURA SOGLIA
-                     elsif( conv_integer(current_address)= 3) then 
+    
+                     elsif( conv_integer(current_address) > 3 and conv_integer(current_address)< DIM) then 
                        o_en <= '1';
                        o_we <= '0';
-                       current_address := current_address + "0000000000000001"; --4
-                        o_address <= current_address;
-                        state <= WAIT_CLOCK_CICLE;
+                       current_address := current_address + "0000000000000001";
+                       o_address <= current_address;
+                       state <= WAIT_CLOCK_CICLE;
+                       
+                     else
+                       state <= CALC_AREA;
                    
-                      elsif( conv_integer(current_address) > 3 and conv_integer(current_address)< N_RIGHE * N_COLONNE +5) then 
-                        o_en <= '1';
-                        o_we <= '0';
-                        current_address := current_address + "0000000000000001";
-                        o_address <= current_address;
-                        state <= WAIT_CLOCK_CICLE;
-                   
-                      elsif(conv_integer(current_address)>= N_RIGHE * N_COLONNE +5 ) then --Se è stata letta tutta l'immagine
-                        state <= CALC_AREA;
-                      end if;
+                     end if;
                       
                 when WAIT_CLOCK_CICLE=> --Stato "vuoto" per attendere che la memoria invii i dati 
                      state <= LETTURA_BYTE;
@@ -120,7 +106,7 @@ begin
                         if(N_RIGHE = 0) then
                             state <= CALC_AREA;
                         else 
-                            state <= AUMENTA_INDIRIZZO;
+                            state <= CALC_DIM;
                         end if;
                       end if;
                       
@@ -141,6 +127,10 @@ begin
                         o_en <= '0';
                         state <= CALC_COLONNA;
                      end if;
+                     
+                when  CALC_DIM =>
+                    DIM := N_RIGHE * N_COLONNE +5;
+                    state <= AUMENTA_INDIRIZZO;
                      
                 when CALC_COLONNA => --Sotto-stato che tiene traccia della colonna corrente. Aggiunto nel design finale per diminuire le operazioni eseguite da CHECK_PIXEL
                     curr_colonna:=curr_colonna + 1;

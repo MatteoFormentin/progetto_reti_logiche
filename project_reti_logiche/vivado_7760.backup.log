@@ -1,0 +1,602 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Mar  6 00:26:53 2018
+# Process ID: 7760
+# Current directory: C:/Progetto_Reti_Logiche/project_reti_logiche
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6828 C:\Progetto_Reti_Logiche\project_reti_logiche\project_reti_logiche.xpr
+# Log file: C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.log
+# Journal file: C:/Progetto_Reti_Logiche/project_reti_logiche\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Progetto_Reti_Logiche_old/project_reti_logiche' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 526.906 ; gain = 48.340
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_2
+update_compile_order -fileset sim_4
+launch_simulation -simset sim_4 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-7760-DESKTOP-3NU7J11/dcp0/project_reti_logiche.xdc]
+Finished Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-7760-DESKTOP-3NU7J11/dcp0/project_reti_logiche.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.131 . Memory (MB): peak = 905.742 ; gain = 0.402
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.133 . Memory (MB): peak = 905.742 ; gain = 0.402
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1022.656 ; gain = 461.883
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_impl xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11100000000000000000...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000100000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110100000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100010000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00011000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010001010110010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001101")(0,7)\]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110011001101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010101010100")(0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000010000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01001111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010100010101000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000100000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100010001000100010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111100001111000011...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111010101111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000100000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110000000000110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010100101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101011101010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00100000001000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010001010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111100001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100010011010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_func_impl
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/xsim.dir/project_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/xsim.dir/project_tb_func_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Mar  6 00:29:14 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.824 ; gain = 0.422
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar  6 00:29:14 2018...
+run_program: Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 1543.625 ; gain = 472.613
+INFO: [USF-XSim-69] 'elaborate' step finished in '29' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_func_impl -key {Post-Implementation:sim_4:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ms
+Failure: Simulation Ended!, test passed
+Time: 16147500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench4.vhd
+$finish called at time : 16147500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench4.vhd" Line 114
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1595.824 ; gain = 48.566
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ms
+launch_simulation: Time (s): cpu = 00:00:34 ; elapsed = 00:01:01 . Memory (MB): peak = 1595.824 ; gain = 1043.367
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 1596.223 ; gain = 0.000
+launch_simulation -simset sim_4 -mode post-implementation -type functional
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-33] write_vhdl -mode funcsim -nolib -force -file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/project_tb_func_impl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_impl xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11100000000000000000...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000100000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110100000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100010000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00011000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010001010110010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001101")(0,7)\]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110011001101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010101010100")(0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000010000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01001111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010100010101000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000100000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100010001000100010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111100001111000011...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111010101111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000100000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110000000000110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010100101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101011101010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00100000001000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010001010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111100001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100010011010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_func_impl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/impl/func/xsim/xsim.dir/project_tb_func_impl/webtalk/xsim_webtalk.tcl -notrace
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1596.223 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:16 . Memory (MB): peak = 1596.223 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+reset_run synth_1
+launch_runs impl_1
+[Tue Mar  6 00:30:55 2018] Launched synth_1...
+Run output will be captured here: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.runs/synth_1/runme.log
+[Tue Mar  6 00:30:55 2018] Launched impl_1...
+Run output will be captured here: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.runs/impl_1/runme.log
+refresh_design
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-7760-DESKTOP-3NU7J11/dcp1/project_reti_logiche.xdc]
+Finished Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-7760-DESKTOP-3NU7J11/dcp1/project_reti_logiche.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.379 . Memory (MB): peak = 1600.477 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.379 . Memory (MB): peak = 1600.477 ; gain = 0.000
+refresh_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1640.516 ; gain = 42.273
+launch_simulation -simset sim_4 -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_4'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a200tfbg484-1
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.srcs/constrs_1/new/timing.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-26] write_vhdl -mode funcsim -nolib -force -file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim/project_tb_func_synth.vhd"
+INFO: [SIM-utils-36] Netlist generated:C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim/project_tb_func_synth.vhd
+INFO: [SIM-utils-54] Inspecting design source files for 'project_tb' in fileset 'sim_4'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim'
+"xvhdl --incr --relax -prj project_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 0768c9d3d970421fad8df8aef60be9ad --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot project_tb_func_synth xil_defaultlib.project_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_signed
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000010000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001000")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000001")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111111110")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11100000000000000000...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000100000000000000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1011010001001011")(0...]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111000")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00110100000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100000000000000")(0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1101001000101101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100010000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100100000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00011000")(0,7)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010001010110010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001101")(0,7)\]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000010")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,bcascreg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(alumodereg=0,carryinreg...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1100110011001101")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0101010101010100")(0...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000001000000010000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01001111")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01010100010101000101...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000010")(0...]
+Compiling architecture obuf_v of entity unisim.OBUF [\OBUF(1,9)(1,7)(1,4)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01010100")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00010001000100000001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010111111100000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10111010")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00100010001000100010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00111100001111000011...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111010101111...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11100000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000000000001")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000100000001010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000010111111100000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000111111111111...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0001111100000001")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110000000000110")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01010100101010101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101011101010001010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00100000001000000010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10101010101010001010...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111100001000")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000111110000000")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0100010011010100")(0...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture fdse_v of entity unisim.FDSE [fdse_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0100")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101010101010...]
+Compiling architecture structure of entity xil_defaultlib.project_reti_logiche [project_reti_logiche_default]
+Compiling architecture projecttb of entity xil_defaultlib.project_tb
+Built simulation snapshot project_tb_func_synth
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim/xsim.dir/project_tb_func_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Mar  6 00:34:44 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 51.852 ; gain = 1.211
+INFO: [Common 17-206] Exiting Webtalk at Tue Mar  6 00:34:44 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 1828.516 ; gain = 1.273
+INFO: [USF-XSim-69] 'elaborate' step finished in '25' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_4/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "project_tb_func_synth -key {Post-Synthesis:sim_4:Functional:project_tb} -tclbatch {project_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source project_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/project_tb/RAM" to the wave window because it has 524288 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ms
+Failure: Simulation Ended!, test passed
+Time: 16147500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/FSM_testbench4.vhd
+$finish called at time : 16147500 ps : File "C:/Progetto_Reti_Logiche/test_bench/FSM_testbench4.vhd" Line 114
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'project_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ms
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:34 . Memory (MB): peak = 1859.336 ; gain = 208.766
+reset_simulation -simset sim_4 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_extra_1 -mode post-implementation -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_4 -mode post-implementation -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_3 -mode post-synthesis -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_3 -mode post-implementation -type timing
+reset_simulation -simset sim_3 -mode post-implementation -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_2 -mode behavioral
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_2 -mode post-synthesis -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_2 -mode post-implementation -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_1 -mode post-synthesis -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation -simset sim_1 -mode post-implementation -type functional
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1872.645 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  6 00:36:55 2018...
