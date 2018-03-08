@@ -1,0 +1,5 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Failure: Simulation Ended!, test passed
+Time: 397500 ps  Iteration: 1  Process: /project_tb/test  File: C:/Progetto_Reti_Logiche/test_bench/testbench2_delay.vhd
+$finish called at time : 397500 ps : File "C:/Progetto_Reti_Logiche/test_bench/testbench2_delay.vhd" Line 114

@@ -30,20 +30,21 @@ architecture Behavioral of project_reti_logiche is
     --Viene creato un tipo per rappresentare i possibili stati del componente
     type state_type is (START_WAIT, AUMENTA_INDIRIZZO, WAIT_CLOCK_CICLE, LETTURA_BYTE, CALC_DIM,
        CALC_RIGA, CALC_COLONNA, CHECK_PIXEL, CHECK_X_MAX, CHECK_X_MIN, CHECK_Y_MIN, CHECK_Y_MAX,
-       CALC_AREA, CALC_ALTEZZA, CALC_LUNGHEZZA, MOLT_ALTEZZA_LUNGHEZZA, CONV_AREA_TO_BIT, MSB_WRITE, LSB_WRITE, DONE_HIGH, DONE_LOW);
+       CALC_AREA, CALC_ALTEZZA, CALC_LUNGHEZZA, MOLT_ALTEZZA_LUNGHEZZA, MSB_WRITE, LSB_WRITE, DONE_HIGH, DONE_LOW);
     signal state : state_type; --Questa variabile tiene traccia tra le varie chiamate del processo dello stato in cui si trova il componente
 begin
     process(i_clk, i_rst)     --il processo è eseguito ad commutazione del clock, la sincronizzazione sul fronte di salita è eseguita successivamente 
                               --i_rst è stato inserito nella sensitivity list per permettere reset asincroni
-                              
-        variable N_COLONNE, N_RIGHE, SOGLIA, DIM : integer;              --Variabili che contengono i valori dell'header     
-        variable curr_riga, curr_colonna: integer :=-1;             --Variabili che tengono traccia della riga e colonna corrente
-        variable current_address : std_logic_vector(15 downto 0);   --Variabili che contengono l'indirizzo di lettura attuale della RAM
-        variable pixel_corrente : integer;                          --Variabili che contiene il valore dell'ultimo pixel letto
-        variable x_min, y_min :integer :=70000;                     --Variabili che contengono gli indirizzi di colonna più esterni dell'immagine
-        variable x_max, y_max :integer :=0;                         --Variabili che contengono gli indirizzi di riga più esterni dell'immagine
-        variable altezza, lunghezza, area_int :integer;             --Variabili usate per il calcolo finale dell'area dell'immagine
-        variable area: std_logic_vector(15 downto 0);               --Variabili che contiene il valore finale binario dell'area da scrivere
+                       
+        variable N_COLONNE, N_RIGHE, SOGLIA : std_logic_vector(7 downto 0);     --Variabili che contengono i valori dell'header
+        variable DIM :std_logic_vector(15 downto 0);                            --Variabili che contiene la dimensione dell'immagine
+        variable curr_riga, curr_colonna: integer range -1 to 255 :=-1;         --Variabili che tengono traccia della riga e colonna corrente
+        variable current_address : std_logic_vector(15 downto 0);               --Variabili che contengono l'indirizzo di lettura attuale della RAM
+        variable pixel_corrente : std_logic_vector(7 downto 0);                 --Variabili che contiene il valore dell'ultimo pixel letto
+        variable x_min, y_min :integer range 0 to 255 :=255;                    --Variabili che contengono gli indirizzi di colonna più esterni dell'immagine
+        variable x_max, y_max :integer range 0 to 255 :=0;                      --Variabili che contengono gli indirizzi di riga più esterni dell'immagine
+        variable altezza, lunghezza :integer range 0 to 255;                    --Variabili usate per il calcolo finale dell'area dell'immagine
+        variable area: std_logic_vector(15 downto 0);                           --Variabili che contiene il valore finale binario dell'area da scrivere
         
     begin
         if (i_rst = '1') then --Controllo segnale di reset -Asincrono-
@@ -56,8 +57,8 @@ begin
                         curr_riga:=-1; --Inizializzazione variabili
                         curr_colonna :=-1;
                         current_address := "0000000000000001";
-                        x_min:=70000;
-                        y_min:=70000;  
+                        x_min:=255;
+                        y_min:=255;  
                         x_max:=0;                      
                         y_max:=0;                      
                         state <= AUMENTA_INDIRIZZO;
@@ -68,11 +69,11 @@ begin
                     if( conv_integer(current_address)<=3) then 
                         o_en <= '1';
                         o_we <= '0';
-                        current_address := current_address + "0000000000000001"; --2
+                        current_address := current_address + "0000000000000001";
                         o_address <= current_address;
                         state <= WAIT_CLOCK_CICLE;
     
-                     elsif( conv_integer(current_address) > 3 and conv_integer(current_address)< DIM) then 
+                     elsif( conv_integer(current_address) > 3 and current_address < DIM) then 
                        o_en <= '1';
                        o_we <= '0';
                        current_address := current_address + "0000000000000001";
@@ -90,7 +91,7 @@ begin
                 when LETTURA_BYTE => --Lettura dei dati in arrivo dalla memoria. il controllo dell'indirizzo currente permette di stabilire quale variabile inizializzare
                     --LETTURA N_COLONNE
                      if( conv_integer(current_address)= 2) then      
-                        N_COLONNE := conv_integer(i_data);
+                        N_COLONNE := i_data;
                         o_en <= '0';
                         if(N_COLONNE = 0) then
                             state <= CALC_AREA;
@@ -101,7 +102,7 @@ begin
                      
                      --LETTURA N_RIGHE
                      if( conv_integer(current_address) = 3) then
-                        N_RIGHE := conv_integer(i_data);
+                        N_RIGHE := i_data;
                         o_en <= '0';
                         if(N_RIGHE = 0) then
                             state <= CALC_AREA;
@@ -112,7 +113,7 @@ begin
                       
                      --LETTURA SOGLIA
                      if( conv_integer(current_address) = 4) then                     
-                        SOGLIA := conv_integer(i_data);
+                        SOGLIA := i_data;
                         o_en <= '0';
                         if(SOGLIA = 0) then
                             state <= CALC_AREA;
@@ -123,13 +124,13 @@ begin
                     
                      --LETTURA PIXEL
                      if( conv_integer(current_address)> 4) then                     
-                        pixel_corrente := conv_integer(i_data);
+                        pixel_corrente := i_data;
                         o_en <= '0';
                         state <= CALC_COLONNA;
                      end if;
                      
                 when  CALC_DIM =>
-                    DIM := N_RIGHE * N_COLONNE +5;
+                    DIM := N_RIGHE * N_COLONNE + "00000101";
                     state <= AUMENTA_INDIRIZZO;
                      
                 when CALC_COLONNA => --Sotto-stato che tiene traccia della colonna corrente. Aggiunto nel design finale per diminuire le operazioni eseguite da CHECK_PIXEL
@@ -180,10 +181,9 @@ begin
                 when CALC_AREA => --Decide come verrà calcolata l'area
                     --Calcolo Area
                     if(SOGLIA = 0) then
-                        altezza:=N_RIGHE;
-                        lunghezza:=N_COLONNE;
-                        state <= MOLT_ALTEZZA_LUNGHEZZA;
-                    elsif(N_COLONNE = 0 or N_RIGHE = 0 or (x_max = 0 and y_max = 0)) then
+                        area:=DIM - 5;
+                        state <= MSB_WRITE;
+                    elsif(N_COLONNE = 0 or N_RIGHE = 0 or (x_min > x_max and y_min > y_max)) then
                         area:="0000000000000000";
                         state <= MSB_WRITE;
                     else
@@ -199,12 +199,8 @@ begin
                      state <= MOLT_ALTEZZA_LUNGHEZZA;
                 
                 when MOLT_ALTEZZA_LUNGHEZZA => --Calcolo finale dell'area - Operazione svolta in uno stato separato poichè particolarmente gravosa
-                    area_int:= altezza*lunghezza;
-                    state <= CONV_AREA_TO_BIT;
-                
-                when CONV_AREA_TO_BIT => --Sotto-stato che converte l'area (intero) in std_logic_vector
-                    area:=std_logic_vector(to_unsigned(area_int, 16));
-                    state <= MSB_WRITE;
+                    area:=std_logic_vector(to_unsigned(altezza*lunghezza, 16));
+                    state <= MSB_WRITE;               
                     
                 when MSB_WRITE => --Scrittura in memoria del byte più siginificativo
                     o_en <= '1';

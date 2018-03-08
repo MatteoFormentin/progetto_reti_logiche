@@ -112,7 +112,7 @@ wait until tb_done = '0';
 wait until rising_edge(tb_clk); 
 
 
-assert false report integer'image(conv_integer(RAM(0))) severity failure;
+report integer'image(conv_integer(RAM(0)));
 
 
 end process test;

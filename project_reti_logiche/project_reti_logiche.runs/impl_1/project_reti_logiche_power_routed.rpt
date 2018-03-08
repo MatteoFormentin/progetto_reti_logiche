@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Mar  7 17:28:21 2018
+| Date             : Thu Mar  8 16:36:43 2018
 | Host             : DESKTOP-3NU7J11 running 64-bit major release  (build 9200)
 | Command          : report_power -file project_reti_logiche_power_routed.rpt -pb project_reti_logiche_power_summary_routed.pb -rpx project_reti_logiche_power_routed.rpx
 | Design           : project_reti_logiche
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.140        |
+| Total On-Chip Power (W)  | 0.137        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.010        |
+| Dynamic (W)              | 0.006        |
 | Device Static (W)        | 0.131        |
 | Effective TJA (C/W)      | 2.5          |
 | Max Ambient (C)          | 84.7         |
@@ -53,16 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.002 |      901 |       --- |             --- |
-|   LUT as Logic |     0.002 |      318 |    133800 |            0.24 |
-|   CARRY4       |    <0.001 |       77 |     33450 |            0.23 |
-|   Register     |    <0.001 |      320 |    267600 |            0.12 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.002 |      753 |       --- |             --- |
-| DSPs           |     0.002 |        4 |       740 |            0.54 |
-| I/O            |     0.001 |       38 |       285 |           13.33 |
+| Slice Logic    |     0.001 |      669 |       --- |             --- |
+|   LUT as Logic |     0.001 |      339 |    133800 |            0.25 |
+|   CARRY4       |    <0.001 |       51 |     33450 |            0.15 |
+|   Register     |    <0.001 |      178 |    267600 |            0.07 |
+|   Others       |     0.000 |        2 |       --- |             --- |
+| Signals        |     0.001 |      525 |       --- |             --- |
+| I/O            |     0.002 |       38 |       285 |           13.33 |
 | Static Power   |     0.131 |          |           |                 |
-| Total          |     0.140 |          |           |                 |
+| Total          |     0.137 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +71,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.039 |       0.008 |      0.030 |
+| Vccint    |       1.000 |     0.034 |       0.004 |      0.030 |
 | Vccaux    |       1.800 |     0.031 |       0.000 |      0.031 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -128,7 +127,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| i_clk | i_clk  |            10.0 |
+| i_clk | i_clk  |             7.0 |
 +-------+--------+-----------------+
 
 
@@ -141,7 +140,7 @@ Table of Contents
 +----------------------+-----------+
 | Name                 | Power (W) |
 +----------------------+-----------+
-| project_reti_logiche |     0.010 |
+| project_reti_logiche |     0.006 |
 +----------------------+-----------+
 
 

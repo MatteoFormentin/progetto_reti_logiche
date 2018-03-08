@@ -1,0 +1,91 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 5796
+License: Customer
+
+Current time: 	Thu Mar 08 11:18:50 CET 2018
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 1
+
+Screen size: 1440x900
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 29 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Matteo Formentin
+User home directory: C:/Users/Matteo Formentin
+User working directory: C:/Progetto_Reti_Logiche/project_reti_logiche
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Matteo Formentin/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.log
+Vivado journal file location: 	C:/Progetto_Reti_Logiche/project_reti_logiche/vivado.jou
+Engine tmp dir: 	C:/Progetto_Reti_Logiche/project_reti_logiche/.Xil/Vivado-5796-DESKTOP-3NU7J11
+
+GUI allocated memory:	122 MB
+GUI max memory:		3,066 MB
+Engine allocated memory: 530 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56457kb) [00:00:37]
+// [Engine Memory]: 454 MB (+324418kb) [00:00:37]
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Progetto_Reti_Logiche\project_reti_logiche\project_reti_logiche.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 76 MB (+17878kb) [00:01:08]
+// [Engine Memory]: 497 MB (+21206kb) [00:01:08]
+// [GUI Memory]: 87 MB (+7076kb) [00:01:12]
+// [Engine Memory]: 523 MB (+1825kb) [00:01:12]
+// Tcl Message: open_project C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// Project name: project_reti_logiche; location: C:/Progetto_Reti_Logiche/project_reti_logiche; part: xc7a200tfbg484-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:40 . Memory (MB): peak = 516.586 ; gain = 42.020 
+dismissDialog("Open Project"); // bs (cj)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking too long to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking too long to process. Increasing delay to 3000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 544 MB. GUI used memory: 40 MB. Current time: 3/8/18 11:19:03 AM CET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 14 seconds
+closeMainWindow("project_reti_logiche - [C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.xpr] - Vivado 2017.4"); // cj
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'

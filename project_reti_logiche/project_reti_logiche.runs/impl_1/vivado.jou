@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Wed Mar  7 17:26:27 2018
-# Process ID: 6780
+# Start of session at: Thu Mar  8 16:34:47 2018
+# Process ID: 5568
 # Current directory: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.runs/impl_1
 # Command line: vivado.exe -log project_reti_logiche.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source project_reti_logiche.tcl -notrace
 # Log file: C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.runs/impl_1/project_reti_logiche.vdi

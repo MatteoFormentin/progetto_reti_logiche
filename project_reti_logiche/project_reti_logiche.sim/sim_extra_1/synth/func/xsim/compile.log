@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/project_reti_logiche/project_reti_logiche.sim/sim_extra_1/synth/func/xsim/project_tb_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_reti_logiche
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Progetto_Reti_Logiche/test_bench/FSM_testbenchExtra1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity project_tb

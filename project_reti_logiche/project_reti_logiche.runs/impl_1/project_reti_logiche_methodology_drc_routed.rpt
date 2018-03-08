@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Mar  7 17:28:19 2018
+| Date         : Thu Mar  8 16:36:42 2018
 | Host         : DESKTOP-3NU7J11 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file project_reti_logiche_methodology_drc_routed.rpt -pb project_reti_logiche_methodology_drc_routed.pb -rpx project_reti_logiche_methodology_drc_routed.rpx
 | Design       : project_reti_logiche
@@ -23,36 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 41
+             Violations found: 37
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| SYNTH-10  | Warning  | Wide multiplier               | 4          |
 | TIMING-18 | Warning  | Missing input or output delay | 37         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-SYNTH-10#1 Warning
-Wide multiplier  
-Detected multiplier at DIM1 of size 15x18, it is decomposed from a wide multipler into 4 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#2 Warning
-Wide multiplier  
-Detected multiplier at DIM1__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#3 Warning
-Wide multiplier  
-Detected multiplier at DIM1__1 of size 18x15, it is decomposed from a wide multipler into 4 DSP blocks.
-Related violations: <none>
-
-SYNTH-10#4 Warning
-Wide multiplier  
-Detected multiplier at area_int0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
-Related violations: <none>
-
 TIMING-18#1 Warning
 Missing input or output delay  
 An input delay is missing on i_data[0] relative to clock(s) i_clk
